@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 import java.util.function.Predicate;
-import java.util.function.Consumer;
 
 /**
  * Main class demonstrating the Persistent Student Management System.
@@ -16,6 +15,7 @@ public class Main {
     private static final String INPUT_FILE = "input";
     private static final String OUTPUT_FILE = "output.txt";
     private static final String SERIALIZED_FILE = "students.ser";
+    private static final int RANDOM_SEED = 123;
     
     public static void main(String[] args) {
         System.out.println("=== Persistent Student Management System ===\n");
@@ -91,7 +91,7 @@ public class Main {
      */
     private static List<Student> createStudentList(List<String> names) {
         List<Student> students = new ArrayList<>();
-        Random random = new Random(123); // Fixed seed for reproducibility
+        Random random = new Random(RANDOM_SEED); // Fixed seed for reproducibility
         
         for (String name : names) {
             double gpa = 2.5 + random.nextDouble() * 1.5; // GPA between 2.5 and 4.0

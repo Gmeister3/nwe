@@ -14,7 +14,8 @@ public class Student implements Serializable {
     private transient int systemId;
     
     // Static counter for generating system IDs
-    private static int idCounter = 1000;
+    private static final int INITIAL_ID = 1000;
+    private static int idCounter = INITIAL_ID;
     
     /**
      * Constructs a Student with the given name and GPA.
