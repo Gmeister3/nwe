@@ -1,0 +1,13 @@
+# Maven build output
+target/
+
+# H2 database files created at runtime
+coffeedb.mv.db
+coffeedb.trace.db
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
