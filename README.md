@@ -135,6 +135,17 @@ connected environments.
 
 ---
 
+## Proof of Execution
+
+The screenshot below was captured from a live run of the application.  It
+confirms that the schema is created, all five coffee rows are inserted, the
+initial inventory is displayed, two transactional sales updates are applied,
+and the final inventory reflects the updated `SALES` and `TOTAL` values.
+
+![CoffeeManagementSystem terminal output](https://github.com/user-attachments/assets/98fe8eba-a10a-4238-94d5-44ff2c3a4c41)
+
+---
+
 ## Building and Running
 
 ### Prerequisites
